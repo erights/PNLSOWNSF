@@ -11,4 +11,8 @@ attempts to learn from
    * @zenparsing's old `::` proposal
    * The reification of `PrivateName` in the decorator proposal.
 
-
+The main difference between the `WeakMap` we have and the
+`WeakMap`-like collection we need is the separation of initialization
+from assignment. The collection we need is like the `PrivateName` from
+the decorators proposal, but with an explicit `init` method, rather
+than having initialization happen by magic.
