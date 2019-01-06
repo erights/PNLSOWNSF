@@ -95,7 +95,7 @@ syntax or its semantics. Because the value of the `&#state` variable is
 never made available, we have not yet provided any additional power.
 
 If this hypothesis is true, then the current private state proposal
-can proceed without creating any problems for the further steps below.
+can proceed without creating any problems for most of the steps below.
 
 
 ## Reifying and Generalizing
