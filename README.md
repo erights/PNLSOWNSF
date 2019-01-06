@@ -239,6 +239,15 @@ yellowF::yellowState = 12;
 ```
 
 
+
+## Data Binding?
+
+This would be exactly as friendly or unfriendly to data binding as
+manual use of WeakMaps for state currently are. Any data binding
+approach that can keep track of state by separately wrapping a WeakMap
+can instead separately wrap a PrivateName.
+
+
 ## Decorators
 
 Decorators would simply use these PrivateNames as the reified
@@ -282,11 +291,3 @@ state.init(obj, 8);
 
 All these mechanisms would now apply across the language uniformly,
 rather than being stuck in classes alone.
-
-
-## Data Binding?
-
-This would be exactly as friendly or unfriendly to data binding as
-manual use of WeakMaps for state currently are. Any data binding
-approach that can keep track of state by separately wrapping a WeakMap
-can instead separately wrap a PrivateName.
