@@ -26,6 +26,7 @@ const bootWM = makeBootPrivateName();
 class PrivateName {
   constructor(...args) {
     bootWM.init(this, makeBootPrivateName(...args));
+    Object.freeze(this);
   }
   has(key) {
     return bootWM.get(this).has(key);
@@ -40,5 +41,11 @@ class PrivateName {
     return bootWM.get(this).set(key, value);
   }
 }
+Object.freeze(PrivateName);
+Object.freeze(PrivateName.prototype);
+Object.freeze(PrivateName.prototype.has);
+Object.freeze(PrivateName.prototype.init);
+Object.freeze(PrivateName.prototype.get);
+Object.freeze(PrivateName.prototype.set);
 
 module.exports = PrivateName;
