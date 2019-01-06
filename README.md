@@ -242,7 +242,7 @@ yellowF::yellowState = 12;
 ## Data Binding?
 
 This would be exactly as friendly or unfriendly to data binding as
-manual use of WeakMaps for state currently are. Any data binding
+manual use of WeakMaps for state currently is. Any data binding
 approach that can keep track of state by separately wrapping a WeakMap
 can instead separately wrap a PrivateName.
 
