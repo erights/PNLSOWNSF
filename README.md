@@ -16,3 +16,6 @@ The main difference between the `WeakMap` we have and the
 from assignment. The collection we need is like the `PrivateName` from
 the decorators proposal, but with an explicit `init` method, rather
 than having initialization happen by magic.
+
+We shim this as [PrivateName.js](./PrivateName.js). Note an
+interesting irony in the way this shim is written. 
