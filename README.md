@@ -145,9 +145,11 @@ The posts at [thread
 comment](https://github.com/tc39/proposal-class-fields/issues/183#issuecomment-451719147)
 and [thread
 comment](https://github.com/tc39/proposal-class-fields/issues/183#issuecomment-451719627)
-suggest that `::` is less confusing than `.#` for these semantics. I
-am mostly indifferent to this syntax change, as long as we maintain
-the same semantics. The example above with this substitution:
+suggest that `::` is less confusing than `.#` for these
+semantics. This is true even for the existing stage 3 proposal without
+any of the PLNSOWNSF enhancements.
+
+The example above with this substitution:
 
 ```js
 const s = new PrivateName();
