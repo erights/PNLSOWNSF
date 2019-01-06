@@ -108,7 +108,7 @@ our own enclosing `&#state` declaration.
 This enables us to substitute our own `PrivateName`-like abstractions,
 as long as they have the same API. This object becomes a first class
 capability that can be used outside the class to access the state it
-names. But any such escapage will be lexically apparent.
+names. Any such escapage will still be lexically apparent.
 
 ```js
 const s = new PrivateName();
