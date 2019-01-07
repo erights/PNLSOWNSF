@@ -252,7 +252,8 @@ can instead separately wrap a PrivateName.
 Decorators would simply use these PrivateNames as the reified
 PrivateNamnes they need. We would preserve the rule that only a field
 decorator gets the PrivateName for that field declaration. The class
-decorator still does not get any of the PrivateNames for its fields.
+decorator still does not get any of the PrivateNames for its
+fields.
 
 
 ## Object literals
