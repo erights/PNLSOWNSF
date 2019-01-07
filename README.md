@@ -1,4 +1,4 @@
-# PLNSOWNSF
+# PNLSOWNSF
 
 The awful title stands for "PrivateName-like special object with
 name-side faulting".
@@ -147,7 +147,7 @@ and [thread
 comment](https://github.com/tc39/proposal-class-fields/issues/183#issuecomment-451719627)
 suggest that `::` is less confusing than `.#` for these
 semantics. This is true even for the existing stage 3 proposal without
-any of the PLNSOWNSF enhancements.
+any of the PNLSOWNSF enhancements.
 
 The example above with this substitution:
 
