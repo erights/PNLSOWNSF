@@ -1,18 +1,15 @@
 /*global require*/
-// Original syntax example from
+
+// Original syntax-free example from
 // https://github.com/zenparsing/hidden-state/blob/master/README.md
-// but with gratutous differences from
-/*
-https://github.com/tc39/proposal-class-fields/issues/183#issuecomment-451733300
-*/
-// repaired.
+// but without gratutous differences from hiddenExampleArrow.js
 
 const { hiddenState } = require('./hidden-state');
 
-const [getState, initState, isInstance] = hiddenState('Point'); 
+const [getState, initState, isInstance] = hiddenState('Point');
 
 class Point {
-  
+ 
   constructor(x, y) {
     initState(this, { x, y });
   }
@@ -28,7 +25,7 @@ class Point {
     return new Point(x + x1, y + y1);
   }
 
-  static isPoint(x) {
-    return isInstance(x);
+  static isPoint(p) {
+    return isInstance(p);
   }
 }
